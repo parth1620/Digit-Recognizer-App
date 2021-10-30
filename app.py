@@ -37,7 +37,7 @@ if canvas_result.image_data is not None:
     img = img[:,:,np.newaxis] / 255.0
 
 model = DigitModel()
-model.load_state_dict(torch.load('/home/parth/Desktop/digit-recognizer-app/src/best-digit-model.pt'))
+model.load_state_dict(torch.load('src/best-digit-model.pt'))
 
 
 with col2:
